@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userAccount.UserAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/bright_green">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K8 Bus"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:background="@drawable/logo_background"
+        android:padding="10dp"
+        android:layout_below="@id/top"
+        android:layout_marginTop="-60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bus"
+        />
+
+    <FrameLayout
+        android:layout_below="@id/top"
+        android:id="@+id/frameLayout"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</RelativeLayout>

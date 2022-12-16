@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_arrow_left"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Travel Schedule Detail"
+        android:textColor="@color/bright_green"
+        android:textSize="20sp" />
+    <View
+        android:layout_below="@id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkest_green"/>
+
+    <LinearLayout
+        android:layout_below="@id/backBtn"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/bus_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_bus" />
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/bus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/bus_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus number"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Capacity"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Available"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Schedule Date"
+            android:textSize="18sp" />
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/startfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting point"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/departure_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bright_green"
+            android:text="Book seat" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

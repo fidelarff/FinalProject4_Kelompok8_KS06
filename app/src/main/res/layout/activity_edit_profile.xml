@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/backArrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow_left"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Edit Profile Information"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/btn_design" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_users"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <EditText
+                android:drawableLeft="@drawable/ic_edit"
+                android:id="@+id/editName"
+                android:hint="Edit your name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                />
+            <EditText
+                android:drawableLeft="@drawable/ic_edit"
+                android:id="@+id/editEmail"
+                android:hint="Edit your email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:drawablePadding="5dp"
+                />
+
+            <EditText
+                android:drawableLeft="@drawable/ic_edit"
+                android:id="@+id/editContact"
+                android:hint="Edit your contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/updateInfoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="Update Info"
+            android:backgroundTint="@color/darkest_green"
+            android:textColor="@color/light_grey" />
+    </RelativeLayout>
+
+</ScrollView>

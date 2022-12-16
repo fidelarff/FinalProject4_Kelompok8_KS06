@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_arrow_left"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Booking Details"
+        android:textColor="@color/bright_green"
+        android:textSize="20sp" />
+    <View
+        android:layout_below="@id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkest_green"/>
+
+    <LinearLayout
+        android:layout_below="@id/backBtn"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Date"
+                android:textSize="18sp" />
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/bookin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Date"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Date"
+                android:textSize="18sp" />
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/schedule_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Date"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Starting point"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/startfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdas"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dfdd"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="No of Seats"
+                android:textSize="18sp" />
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/bookedSeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="total "
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total amount"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Method"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/pay_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Method"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Status"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/pay_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Status"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Status"
+                android:textSize="18sp" />
+
+            <TextView
+                android:gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Status"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
